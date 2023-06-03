@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.attribution {
+  text-align: center;
+  padding: 1rem 0;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(5, 85%, 63%);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+.paragraph {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.8;
+}
+
+.btn {
+  background-color: hsl(5, 85%, 63%);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  color: hsl(36, 100%, 99%);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  transition: all 300ms ease-in-out;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3.5rem;
+  height: 200px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li:not(:first-child) {
+  margin-left: 1rem;
+}
+nav ul li a {
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: hsl(5, 85%, 63%);
+  transition: all 300ms ease-in-out;
+}
+
+.main-grid {
+  color: white;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-grid .card:nth-child(2) {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  grid-row-end: 3;
+}
+
+.new {
+  padding: 2rem;
+  background-color: hsl(240, 100%, 5%);
+}
+.new h2 {
+  font-size: 200%;
+  color: hsl(35, 77%, 62%);
+  padding-bottom: 2rem;
+}
+.new a {
+  font-size: 118%;
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+  display: block;
+  padding-bottom: 0.8rem;
+}
+.new a:hover {
+  color: hsl(35, 77%, 62%);
+  transition: all 300ms ease-in-out;
+}
+.new p {
+  line-height: 1.5;
+  font-weight: 300;
+  color: hsl(233, 8%, 79%);
+}
+.new hr {
+  border: 1px solid hsl(233, 8%, 79%);
+  margin: 1.5rem 0;
+}
+
+.primary-heading h1 {
+  color: hsl(240, 100%, 5%);
+  font-size: 350%;
+  font-weight: 900;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+  background: url("../images/image-web-3-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.grid-articals {
+  margin-top: 3.5rem;
+  display: flex;
+}
+.grid-articals article {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.grid-articals article:not(:last-child) {
+  margin-right: 1rem;
+}
+.grid-articals article img {
+  width: 7rem;
+}
+.grid-articals article .wrapper {
+  padding: 1.5rem;
+}
+.grid-articals article .wrapper span {
+  font-size: 260%;
+  font-weight: 700;
+  color: hsl(233, 8%, 79%);
+}
+.grid-articals article .wrapper a {
+  display: block;
+  font-weight: 800;
+  padding: 0.7rem 0;
+  font-size: 110%;
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+.grid-articals article .wrapper a:hover {
+  color: hsl(5, 85%, 63%);
+  transition: all 300ms ease-in-out;
+}
+.grid-articals article .wrapper p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.8;
+}

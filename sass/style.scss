@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lato:wght@100;300;400;700;900&display=swap');
+
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+$Soft-orange: hsl(35, 77%, 62%);
+$Sof-red: hsl(5, 85%, 63%);
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Inter';
+    }
+
+    .container {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .attribution {
+       text-align: center;
+       padding: 1rem 0;
+       a {
+        text-decoration: none;
+        color: $Sof-red;
+        &:hover {
+            text-decoration: underline;
+        }
+       }
+    }
+
+    .paragraph {
+        color: $Dark-grayish-blue;
+        line-height: 1.8;
+    }
+
+    .btn {
+        background-color: $Sof-red;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        color: $Off-white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: 500;
+        &:hover {
+            background-color: $Very-dark-blue;
+            color: $Off-white;
+            transition: all 300ms ease-in-out;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 3.5rem;
+        height: 200px;
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                &:not(:first-child) {
+                    margin-left: 1rem;
+                }
+                a {
+                    color: $Dark-grayish-blue;
+                    font-weight: 500;
+                    text-decoration: none;
+                    &:hover {
+                        color: $Sof-red;
+                        transition: all 300ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+.main-grid {   
+    color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    .card{
+        //  background-color: black !important;
+        &:nth-child(2) {
+           grid-column-start: 3;
+           grid-row-start: 1;
+           grid-row-end: span 2;
+           grid-row-end: 3;
+        }
+    }
+}
+
+.new {
+    padding: 2rem;
+    background-color: $Very-dark-blue ;
+    h2 {
+        font-size: 200%;
+        color: $Soft-orange;
+        padding-bottom: 2rem;
+    }
+    a {
+        font-size: 118%;
+        font-weight: 700;
+        text-decoration: none;
+        color: $Off-white;
+        display: block;
+        padding-bottom: .8rem;
+        &:hover {
+            color: $Soft-orange;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    p {
+        line-height: 1.5;
+        font-weight: 300;
+        color: $Grayish-blue;
+    }
+    hr {
+        border: 1px solid $Grayish-blue;
+        margin: 1.5rem 0;
+    }
+}
+
+.primary-heading {
+    h1 {
+        color: $Very-dark-blue;
+        font-size: 350%;
+        font-weight: 900;
+    }  
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+    background: url('../images/image-web-3-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+
+  .grid-articals {
+    margin-top: 3.5rem;
+    display: flex;
+    article {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        img {
+            width: 7rem;
+        }
+        .wrapper {
+            padding: 1.5rem;
+            span {
+                font-size: 260%;
+                font-weight: 700;
+                color: $Grayish-blue;
+            }
+            a {
+                display: block;
+                font-weight: 800;
+                padding: .7rem 0;
+                font-size: 110%;
+                text-decoration: none;
+                color: $Very-dark-blue;
+                &:hover {
+                    color: $Sof-red;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+            p {
+                color: $Dark-grayish-blue;
+                line-height: 1.8;
+            }    
+        }
+    }
+  }

@@ -89,16 +89,23 @@ nav ul li a:hover {
     grid-row-end: 3;
   }
 }
-@media (max-width: 664px) {
+@media (max-width: 930px) {
   nav ul {
     display: none;
   }
-  .main-grid .grid-col-span-2 {
-    background: url("../images/image-web-3-mobile.jpg");
-    height: 600px;
+  .nav-toggler {
+    display: none;
   }
   .main-grid .card:nth-of-type(2), .main-grid .card:nth-of-type(3) {
     grid-column: span 2;
+  }
+  .main-grid .card .btn {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 664px) {
+  .main-grid .grid-col-span-2 {
+    background: url("../images/image-web-3-mobile.jpg");
   }
 }
 .new {

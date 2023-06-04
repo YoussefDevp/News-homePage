@@ -1,0 +1,87 @@
+@media (min-width: 930px) {
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        .card{
+            &:nth-child(2) {
+               grid-column-start: 3;
+               grid-row-start: 1;
+               grid-row-end: span 2;
+               grid-row-end: 3;
+            }        
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    nav ul {
+        display: none;
+        
+    }
+
+    .nav-togller {
+        display: block;
+    }
+    
+
+    .main-grid {
+
+        .card {
+                &:nth-of-type(2), &:nth-of-type(3) {
+                grid-column: span 2; 
+            }
+            &:nth-of-type(2) {
+                grid-row-start: 4;
+            }
+
+            .btn {
+               margin-top: 2rem;
+            }
+        }
+    }
+
+    .grid-articals {
+        display: flex;
+    flex-direction: column;
+    
+    }
+}
+
+@media (max-width: 930px) {
+    nav ul {
+        display: none;
+        
+    }
+
+    .nav-togller {
+        display: block;
+    }
+    
+
+    .main-grid {
+
+        .card {
+                &:nth-of-type(2), &:nth-of-type(3) {
+                grid-column: span 2; 
+            }
+            &:nth-of-type(2) {
+                grid-row-start: 4;
+            }
+
+            .btn {
+               margin-top: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 664px) {
+    .main-grid {
+
+        .grid-col-span-2 {
+            background: url('../images/image-web-3-mobile.jpg');
+        }
+                
+    }
+}

@@ -82,36 +82,6 @@ nav ul li a:hover {
   gap: 1.5rem;
 }
 
-@media (min-width: 930px) {
-  .main-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .main-grid .card:nth-child(2) {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: span 2;
-    grid-row-end: 3;
-  }
-}
-@media (max-width: 930px) {
-  nav ul {
-    display: none;
-  }
-  .nav-togller {
-    display: block;
-  }
-  .main-grid .card:nth-of-type(2), .main-grid .card:nth-of-type(3) {
-    grid-column: span 2;
-  }
-  .main-grid .card .btn {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 664px) {
-  .main-grid .grid-col-span-2 {
-    background: url("../images/image-web-3-mobile.jpg");
-  }
-}
 .new {
   padding: 2rem;
   background-color: hsl(240, 100%, 5%);
@@ -167,11 +137,6 @@ nav ul li a:hover {
 .grid-articals {
   display: flex;
 }
-@media (max-width: 930px) {
-  .grid-articals {
-    flex-direction: column;
-  }
-}
 .grid-articals article {
   display: flex;
   flex: 1;
@@ -206,4 +171,59 @@ nav ul li a:hover {
 .grid-articals article .wrapper p {
   color: hsl(236, 13%, 42%);
   line-height: 1.8;
+}
+
+@media (min-width: 930px) {
+  .main-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-grid .card:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-row-end: 3;
+  }
+}
+@media (max-width: 930px) {
+  nav ul {
+    display: none;
+  }
+  .nav-togller {
+    display: block;
+  }
+  .main-grid .card:nth-of-type(2), .main-grid .card:nth-of-type(3) {
+    grid-column: span 2;
+  }
+  .main-grid .card:nth-of-type(2) {
+    grid-row-start: 4;
+  }
+  .main-grid .card .btn {
+    margin-top: 2rem;
+  }
+  .grid-articals {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 930px) {
+  nav ul {
+    display: none;
+  }
+  .nav-togller {
+    display: block;
+  }
+  .main-grid .card:nth-of-type(2), .main-grid .card:nth-of-type(3) {
+    grid-column: span 2;
+  }
+  .main-grid .card:nth-of-type(2) {
+    grid-row-start: 4;
+  }
+  .main-grid .card .btn {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 664px) {
+  .main-grid .grid-col-span-2 {
+    background: url("../images/image-web-3-mobile.jpg");
+  }
 }

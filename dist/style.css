@@ -27,6 +27,10 @@ body {
   text-decoration: underline;
 }
 
+.nav-togller {
+  display: none;
+}
+
 .paragraph {
   color: hsl(236, 13%, 42%);
   line-height: 1.8;
@@ -93,8 +97,8 @@ nav ul li a:hover {
   nav ul {
     display: none;
   }
-  .nav-toggler {
-    display: none;
+  .nav-togller {
+    display: block;
   }
   .main-grid .card:nth-of-type(2), .main-grid .card:nth-of-type(3) {
     grid-column: span 2;
@@ -161,7 +165,6 @@ nav ul li a:hover {
 }
 
 .grid-articals {
-  margin-top: 3.5rem;
   display: flex;
 }
 @media (max-width: 930px) {

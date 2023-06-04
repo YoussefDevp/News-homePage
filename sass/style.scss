@@ -35,6 +35,11 @@ $Sof-red: hsl(5, 85%, 63%);
        }
     }
 
+    .nav-togller {
+        display: none;
+    }
+    
+
     .paragraph {
         color: $Dark-grayish-blue;
         line-height: 1.8;
@@ -115,8 +120,8 @@ $Sof-red: hsl(5, 85%, 63%);
         
     }
 
-    .nav-toggler {
-        display: none;
+    .nav-togller {
+        display: block;
     }
     
 
@@ -205,7 +210,6 @@ $Sof-red: hsl(5, 85%, 63%);
   }
 
   .grid-articals {
-    margin-top: 3.5rem;
     display: flex;
 
     @media (max-width: 930px) {

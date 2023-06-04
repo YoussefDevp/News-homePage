@@ -20,6 +20,7 @@ $Sof-red: hsl(5, 85%, 63%);
     .container {
         max-width: 1180px;
         margin: 0 auto;
+        padding: 2rem;
     }
 
     .attribution {
@@ -82,17 +83,46 @@ $Sof-red: hsl(5, 85%, 63%);
     }
 
 .main-grid {   
-    color: white;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    .card{
-        //  background-color: black !important;
-        &:nth-child(2) {
-           grid-column-start: 3;
-           grid-row-start: 1;
-           grid-row-end: span 2;
-           grid-row-end: 3;
+
+        
+ }
+
+
+@media (min-width: 930px) {
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        .card{
+            &:nth-child(2) {
+               grid-column-start: 3;
+               grid-row-start: 1;
+               grid-row-end: span 2;
+               grid-row-end: 3;
+            }        
+        }
+    }
+   
+}
+
+@media (max-width: 664px) {
+    nav {
+        ul {
+            display: none;
+        }
+        
+    }
+    .main-grid {
+
+        .grid-col-span-2 {
+            background: url('../images/image-web-3-mobile.jpg');
+            height: 600px;
+        }
+        .card {
+            &:nth-of-type(2), &:nth-of-type(3) {
+                grid-column: span 2;
+            }
         }
     }
 }
@@ -129,6 +159,8 @@ $Sof-red: hsl(5, 85%, 63%);
     }
 }
 
+
+
 .primary-heading {
     h1 {
         color: $Very-dark-blue;
@@ -156,6 +188,11 @@ $Sof-red: hsl(5, 85%, 63%);
   .grid-articals {
     margin-top: 3.5rem;
     display: flex;
+
+    @media (max-width: 930px) {
+        flex-direction: column;
+    
+    }
     article {
         display: flex;
         flex: 1;
